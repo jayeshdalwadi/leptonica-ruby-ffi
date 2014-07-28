@@ -3,7 +3,7 @@ require 'ffi'
 
 module LeptonicaFFI
     extend FFI::Library
-    ffi_lib "liblept.so.1.69"
+    ffi_lib ["liblept.so", 'liblept.dylib']
 
     functions =
     [
