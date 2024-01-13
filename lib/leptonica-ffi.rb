@@ -2067,8 +2067,8 @@ module LeptonicaFFI
         begin
             attach_function(*func)
         rescue Object => e
-          p func
-          p e
+          #p func
+          #p e
             unattached_functions << func[0]
         end
     end
